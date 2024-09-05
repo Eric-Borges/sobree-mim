@@ -1,0 +1,121 @@
+H1 {
+    color: rgb(226, 226, 182);
+
+}
+
+H2 {
+    color: rgb(226, 226, 182);
+}
+
+p {
+    color: whitesmoke;
+    font-size: large;
+}
+
+li {
+    color: rgb(110, 172, 218);
+    font-size: large;
+}
+
+th {
+    color: rgb(226, 226, 182);
+}
+
+td {
+    color: rgb(110, 172, 218);
+    font-size: large;
+}
+
+body {
+    background-color: rgb(2, 21, 38);
+}
+
+.textos-finais {
+    border-color: red;
+    color: rgb(110, 172, 218);
+}
+
+button {
+    position: relative;
+    left: 12;
+}
+
+/* Estilizando o contêiner do carrossel */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Estilizando o contêiner das imagens */
+.carousel-images {
+    display: flex;
+    width: 100%;
+    animation: slide 15s infinite;
+    /* Animação que desliza as imagens */
+}
+
+/* Estilizando cada imagem */
+.carousel-images img {
+    width: 100%;
+    flex: 1;
+    object-fit: cover;
+    /*sem distorção */
+}
+
+/* Definindo a animação */
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+
+    20% {
+        transform: translateX(0%);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    45% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    70% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.instagram-button {
+    display: inline-block;
+    background-color: #ffffff;
+    /* Cor de fundo do Instagram */
+    padding: 10px;
+    border-radius: 50%;
+    /* faz botão redondo */
+    transition: background-color 0.3s ease;
+}
+
+.instagram-button img {
+    width: 24px;
+    /* Tamanho da logo */
+    height: 24px;
+    display: block;
+}
+
+.instagram-button:hover {
+    background-color: #C13584;
+    /* Cor pss mouse */
+}
